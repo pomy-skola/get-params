@@ -1,0 +1,13 @@
+body {
+    
+}
+
+.light {
+    color: gray;;
+    background-color: white;
+}
+
+.dark {
+    color: whitesmoke;
+    background-color: black;
+}
