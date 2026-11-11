@@ -12,8 +12,8 @@
     <form method="get" action="{{ url_for('vzhled') }}">
         <label for="color_theme">Vyberte barevné schéma:</label>
         <select name="theme" id="color_theme">
-            <option value="light">Světlé</option>
-            <option value="dark">Tmavé</option>
+            <option value="light" {% if color_theme == 'light' %}selected{% endif %}>Světlé</option>
+            <option value="dark" {% if color_theme == 'dark' %}selected{% endif %}>Tmavé</option>
         </select>
         <button type="submit">Použít</button>
     </form>
